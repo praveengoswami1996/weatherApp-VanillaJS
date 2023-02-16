@@ -1,0 +1,102 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.card {
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    opacity: 0.8;
+}
+
+.search-bar-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar-section input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+}
+
+.search-bar-section input::placeholder {
+    color: lightgray;
+}
+
+.search-bar-section button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ 
+.city-name-section h3 {
+    font-size: 24px;
+}
+
+.temperature-section h2 {
+    font-size: 50px;
+}
+
+.weather-type-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.weather-type-section img {
+    background: lightskyblue;
+    border-radius: 10px;
+}
+
+.weather-type-section p {
+    font-size: 17px;
+}
+
+.Humidity-wind-section p {
+    font-size: 15px;
+}
+
+/****************MEDIA QUERIES******************/
+
+@media screen and (max-width: 390px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .search-bar-section button {
+        display: none;
+    }
+}
